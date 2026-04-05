@@ -34,12 +34,11 @@
 其中：
 
 - `EasySMS` 是本地短信聚合服务的 canonical repo
-- 当前先交付可运行的服务骨架与工作区契约
-- 当前默认 provider 是：`mock_sms`
+- 当前已交付真实 provider 聚合、健康检查、冷却 / 熔断与趋势评分
 - 当前 Docker runtime 契约是文件驱动：
   - config：`/etc/easy-sms/config.yaml`
   - state：`/var/lib/easy-sms`
-- 当前根工作区尚未绑定远端 submodule URL，`repos/EasySMS` 先以内嵌独立仓库方式初始化
+- 当前根工作区通过正式 submodule 引用 `https://github.com/aiaimimi0920/EasySMS.git`
 
 ### 什么时候放 `deploy/`
 

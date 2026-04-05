@@ -1,0 +1,3 @@
+[submodule "repos/EasySMS"]
+	path = repos/EasySMS
+	url = https://github.com/aiaimimi0920/EasySMS.git

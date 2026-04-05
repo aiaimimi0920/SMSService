@@ -36,7 +36,7 @@ SMSService/
 ## Notes
 
 - `AIRead` points to the shared operator knowledge base. Do not delete or silently rewrite secret-bearing materials.
-- `repos/EasySMS` is initialized as an independent git repo inside the workspace. Once the canonical remote is finalized, it can be wired into the root repo as a formal submodule.
+- `repos/EasySMS` is tracked as a formal git submodule backed by the canonical remote repository.
 - Runtime bootstrap for EasySMS is file-driven:
   - config: `/etc/easy-sms/config.yaml`
   - state: `/var/lib/easy-sms`
