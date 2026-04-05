@@ -1,0 +1,17 @@
+services:
+  easy-sms-service:
+    build:
+      context: ../..
+      dockerfile: deploy/EasySMS/Dockerfile
+    image: smsservice/easy-sms-service:local
+    container_name: easy-sms-service
+    restart: unless-stopped
+    ports:
+      - "18081:8080"
+    environment:
+      EASY_SMS_CONFIG_PATH: /etc/easy-sms/config.yaml
+      EASY_SMS_STATE_DIR: /var/lib/easy-sms
+      EASY_SMS_RESET_STORE_ON_BOOT: "${EASY_SMS_RESET_STORE_ON_BOOT:-false}"
+    volumes:
+      - ./config.yaml:/etc/easy-sms/config.yaml
+      - ./data:/var/lib/easy-sms

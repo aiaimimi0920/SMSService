@@ -1,0 +1,8 @@
+tmp
+.wrangler/cache
+.git
+AIRead
+deploy/EasySMS/data
+repos/EasySMS/.git
+repos/EasySMS/dist
+repos/EasySMS/node_modules

@@ -1,0 +1,11 @@
+tmp/
+.wrangler/cache/
+.DS_Store
+Thumbs.db
+AIRead/
+repos/EasySMS/
+!repos/.gitkeep
+others/tampermonkey/*.local.user.js
+others/tampermonkey/*.secrets.local.json
+repos/EasySMS/dist/
+repos/EasySMS/node_modules/
